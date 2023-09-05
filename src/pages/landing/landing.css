@@ -1,0 +1,77 @@
+.landing-container {
+    display: grid;
+    position: relative;
+    grid-template-columns: 1fr 1fr;
+    color: #ffffff;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.landing-image img {
+    width: 80%;
+    height: 80%;
+}
+
+
+.top-left {
+    position: absolute;
+    top: -50px;
+    left: -30px;
+}
+
+.bottom-left {
+    position: absolute;
+    bottom: 0;
+    left: -30px;
+}
+
+.bottom-right {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.landing-logo {
+    position: relative;
+}
+
+.landing-logo img:first-child {
+    width: 66%;
+    height: 66%;
+}
+
+.landing-logo img:last-child {
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    top: -15px;
+    right: 20px;
+}
+
+.landing-info {
+    width: 70%;
+    justify-self: flex-end;
+}
+
+.landing-title {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 33px;
+    /* identical to box height */
+    color: #000000;
+}
+
+.landing-quote {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #000000;
+}
+
+.landing-info button {
+    margin-right: 20px;
+}

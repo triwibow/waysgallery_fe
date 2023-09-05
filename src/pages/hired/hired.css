@@ -1,0 +1,83 @@
+.hired-container {
+    display: grid;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+
+.hired-form {
+    display: grid;
+    width: 100%;
+    row-gap: 10px;
+}
+
+.hired-input {
+    padding: 10px 20px;
+    background: #E7E7E7;
+    border: 2px solid #2FC4B2;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.hired-textarea {
+    padding: 10px 20px;
+    background: #E7E7E7;
+    border: 2px solid #2FC4B2;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    height: 120px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.hired-input:focus, .hired-textarea:focus {
+    outline: none;
+}
+
+.inline-hired {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+}
+
+.inline-hired-item {
+    position: relative;
+}
+
+.inline-hired-item input {
+    padding: 10px 20px;
+    background: #E7E7E7;
+    border: 2px solid #2FC4B2;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25px;
+    color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+}
+
+.inline-hired-item input:focus {
+    outline: none;
+}
+
+.inline-hired-item img {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+}
+
+.hired-button {
+    margin: 0 auto;
+}
+
+.hired-button button {
+    margin: 5px 15px;
+}

@@ -1,0 +1,257 @@
+.profile-container {
+    display: grid;
+    padding: 80px 0;
+}
+
+.profile-top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+}
+
+.profile-avatar {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.profile-fullname {
+    display: block;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 21px;
+    line-height: 33px;
+    color: #000000;
+}
+
+.profile-greeting {
+    margin-top: 0;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 66px;
+    color: #000000;
+}
+
+.profile-right {
+    padding: 20px;
+    height: 400px;
+    border-radius: 5px;
+    background: #dddddd;
+    z-index: 2;
+}
+
+.profile-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.profile-post-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.empty-post img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.empty-arts {
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.empty-arts p strong {
+    color: #2FC4B2;
+    cursor: pointer;
+}
+
+.empty-arts p strong:hover {
+    opacity: 0.5;
+}
+
+
+.profile-post {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.profile-post img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.profile-bottom h4 {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    color: #000000;
+}
+
+
+.upload-container {
+    display: grid;
+    grid-template-columns: 60% 1fr;
+    gap: 30px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.upload-photo {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.upload-photo-primary {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    height: 380px;
+    border: 5px dashed #cccccc;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.browse {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+    color: #696969;
+}
+
+.browse span {
+    color: #2FC4B2;
+}
+
+.photo-primary {
+    width: 100%;
+}
+
+.upload-photo-secondary {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 20px;
+}
+
+.photo-item {
+    display: grid;
+    border: 5px dashed #cccccc;
+    width: 100%;
+    height: 111px;
+    align-items: center;
+    justify-items: center;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.photo-secondary {
+    width: 100%;
+    height: 100%;
+}
+
+.photo-preview {
+    width: 70%;
+    max-height: 70%;
+    object-fit: cover;
+}
+
+.upload-form {
+    
+}
+
+.upload-form form {
+    display: grid;
+    row-gap: 15px;
+    width: 100%;
+}
+
+.upload-form input {
+    padding: 10px 20px;
+    background: #E7E7E7;
+    border: 2px solid #2FC4B2;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.upload-form textarea {
+    padding: 10px 20px;
+    background: #E7E7E7;
+    border: 2px solid #2FC4B2;
+    box-sizing: border-box;
+    border-radius: 5px;
+    height: 120px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.upload-form input:focus, .upload-form textarea:focus{
+    outline: none;
+}
+
+.upload-button {
+    margin: 0 auto;
+}
+
+.upload-button button {
+    margin: 5px 20px;
+}
+
+
+.upload-file {
+    display: grid;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    align-items: center;
+    justify-items: center;
+    border: 4px dashed #BCBCBC;
+    border-radius: 50%;
+    box-sizing: border-box;
+    color: #ffffff;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.upload-file input {
+    display: none;
+}
+
+.avatar-icon {
+    width: 103px;
+    height: 86px;
+    object-fit: cover;
+}
+
+.avatar-file {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.detail-top-right {
+    position: absolute;
+    right: 0;
+    z-index: 0;
+}
+

@@ -1,0 +1,117 @@
+.upload-container {
+    display: grid;
+    grid-template-columns: 60% 1fr;
+    gap: 30px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.upload-photo {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.upload-photo-primary {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    height: 380px;
+    border: 5px dashed #cccccc;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.browse {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+    color: #696969;
+}
+
+.browse span {
+    color: #2FC4B2;
+}
+
+.photo-primary {
+    width: 100%;
+}
+
+.upload-photo-secondary {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 20px;
+}
+
+.photo-item {
+    display: grid;
+    border: 5px dashed #cccccc;
+    width: 100%;
+    height: 111px;
+    align-items: center;
+    justify-items: center;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.photo-secondary {
+    width: 100%;
+    height: 100%;
+}
+
+.photo-preview {
+    width: 70%;
+    max-height: 70%;
+    object-fit: cover;
+}
+
+.upload-form {
+
+}
+
+.upload-form form {
+    display: grid;
+    row-gap: 15px;
+}
+
+.upload-form input {
+    padding: 10px 20px;
+    background: #E7E7E7;
+    border: 2px solid #2FC4B2;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.upload-form textarea {
+    padding: 10px 20px;
+    background: #E7E7E7;
+    border: 2px solid #2FC4B2;
+    box-sizing: border-box;
+    border-radius: 5px;
+    height: 120px;
+}
+
+.upload-button {
+    margin: 0 auto;
+}
+
+.upload-button button {
+    margin: 5px 20px;
+}
+
+.upload-form textarea {
+    padding: 10px 20px;
+    background: #E7E7E7;
+    border: 2px solid #2FC4B2;
+    box-sizing: border-box;
+    border-radius: 5px;
+    height: 120px;
+}
+
+.upload-button {
+    margin: 0 auto;
+}
+
+.upload-button button {
+    margin: 5px 20px;
+}

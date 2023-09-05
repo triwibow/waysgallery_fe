@@ -1,0 +1,108 @@
+.transaction-container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.transactions-filter {
+    margin-top: 40px;
+}
+
+.table-transactions {
+    width: 100%;
+    text-align: left;
+    margin-top: 40px;
+    border: 1px solid #828282;
+    border-collapse: collapse;
+
+}
+
+
+
+.table-transactions, .table-transactions th, .table-transactions td {
+    border: 1px solid #828282;
+    padding: 10px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: #000000;
+}
+
+.table-transactions th {
+    font-weight: 700;
+    background: #E5E5E5;
+}
+
+.transactions-action, .transactions-action-head {
+    text-align: center;
+}
+
+.table-transactions td.status-waiting {
+    color: #FF9900;
+}
+
+.table-transactions td.status-complete {
+    color: #78A85A;
+}
+
+.table-transactions td.status-cancel {
+    color: #E83939;
+}
+
+.table-transactions td.status-waiting-approved {
+    color: #00D1FF;
+}
+
+.table-transactions td.status-project-complete {
+    color: #00D1FF;
+}
+
+.table-transactions td.status-reject {
+    color: #ff0000;
+}
+
+.table-transactions td.transactions-order {
+    cursor: pointer;
+    color: #0D33B9;
+}
+
+.transactions-empty {
+    text-align: center;
+}
+
+.transactions-button {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    width: 100%;
+}
+
+.button-approve {
+    cursor: pointer;
+    background: #0ACF83;
+    padding: 0 10px;
+    border-radius: 5px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 22px;
+    /* identical to box height, or 169% */
+    color: #FFFFFF;
+    border: none;
+    
+}
+
+.button-cancel {
+    cursor: pointer;
+    padding: 0 10px;
+    background: #FF0742;
+    border-radius: 5px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 22px;
+    /* identical to box height, or 169% */
+    color: #FFFFFF;
+    border: none;
+}
+
