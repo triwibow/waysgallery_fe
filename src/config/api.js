@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const API = axios.create({
-    baseURL: "https://wide-eyed-singlet-dove.cyclic.app/api/v1"
+    baseURL: "https://waysgalleryapi-production.up.railway.app/api/v1/auth"
 });
 
 const setAuthToken = (token) => {
