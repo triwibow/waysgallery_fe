@@ -49,7 +49,7 @@ const Detail = () => {
                 {error? (
                     <h1>Server error</h1>
                 ):
-                loading ? (
+                loading || !post ? (
                     <h1>Loading...</h1>
                 ):(
                     <div className="detail-container">
