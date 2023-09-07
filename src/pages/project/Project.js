@@ -5,6 +5,7 @@ import NavBar from '../../component/navbar/NavBar';
 import { API } from '../../config/api';
 import SuccessSubmit from '../../component/modal/SuccessSubmit';
 import ErrorSubmit from '../../component/modal/ErrorSubmit';
+import { API_URL } from '../../config/keys';
 
 const Project = () => {
     const router = useHistory();
@@ -125,7 +126,7 @@ const Project = () => {
                 <div className="view-project-container">
                     <div className="left-project-item">
                         <div className="project-image-primary">
-                            <img src={`http://localhost:5000/project/${project.photos[0].image}`} alt='primary' />
+                            <img src={`${API_URL}/project/${project.photos[0].image}`} alt='primary' />
                         </div>
 
                         <div className="project-image-secondary">
@@ -134,7 +135,7 @@ const Project = () => {
                                     return project.photos.indexOf(photo) !== 0
                                 }).map(photo => {
                                     return <div className="image-secondary-item" key={photo.id}>
-                                        <img src={`http://localhost:5000/project/${photo.image}`} alt='primary' />
+                                        <img src={`${API_URL}/project/${photo.image}`} alt='primary' />
                                     </div>
                                 })
                             }

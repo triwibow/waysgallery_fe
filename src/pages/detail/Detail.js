@@ -46,7 +46,7 @@ const Detail = () => {
         <Fragment>
             <NavBar />
             <div className="main-container">
-                {!post || error? (
+                {error? (
                     <h1>Server error</h1>
                 ):
                 loading ? (

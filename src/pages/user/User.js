@@ -5,6 +5,7 @@ import { API } from '../../config/api';
 import {useParams, Link, useHistory} from 'react-router-dom';
 import detailtopright from '../../assets/icon/detailtopright.svg';
 import nopost from '../../assets/icon/nopost.png';
+import { API_URL } from '../../config/keys';
 
 const User = () => {
     const router = useHistory();
@@ -59,7 +60,7 @@ const User = () => {
                     <div className="profile-container">
                         <div className="profile-top">
                             <div className="profile-left-user">
-                                <img src={`http://localhost:5000/avatar/${user.avatar}`} alt="avatar" className="profile-avatar" />
+                                <img src={`${API_URL}/avatar/${user.avatar}`} alt="avatar" className="profile-avatar" />
                                 <span className="profile-fullname">{user.fullName}</span>
                                 <h1 className="profile-greeting">{user.greeting}</h1>
                                 <Link to="/edit-profile" className="link">
@@ -71,7 +72,7 @@ const User = () => {
                             </div>
                             <div className="profile-right-user">
                                 {user.posts.length > 0 && latestPostIndex ? (
-                                    <img src={`http://localhost:5000/photo/${user.posts[latestPostIndex].photos[0].image}`} alt="last post" />
+                                    <img src={`${API_URL}/photo/${user.posts[latestPostIndex].photos[0].image}`} alt="last post" />
                                 ): (
                                     <div className="empty-post">
                                         <img src={nopost} alt="empty" />
@@ -86,7 +87,7 @@ const User = () => {
                                     user.arts.map(art => {
                                         return <div className="profile-post" key={art.id}>
                                                     <img
-                                                        src={`http://localhost:5000/art/${art.image}`} 
+                                                        src={`${API_URL}/art/${art.image}`} 
                                                         alt="last post" 
                                                     />
                                                 </div>
