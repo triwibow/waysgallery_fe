@@ -5,6 +5,7 @@ import {useParams} from 'react-router-dom';
 import { API } from '../../config/api';
 
 import {Link} from 'react-router-dom';
+import { API_URL } from '../../config/keys';
 
 
 const Detail = () => {
@@ -54,7 +55,7 @@ const Detail = () => {
                     <div className="detail-container">
                         <div className="detail-header">
                             <div className="detail-avatar">
-                                <img src={`http://localhost:5000/avatar/${post.createdBy.avatar}`} alt="avatar" />
+                                <img src={`${API_URL}/avatar/${post.createdBy.avatar}`} alt="avatar" />
                             </div>
                             <div className="detail-title">
                                 <span>{post.title}</span>
@@ -73,7 +74,7 @@ const Detail = () => {
                         </div>
                         <div className="detail-body">
                             <div className="detail-image">
-                                <img src={`http://localhost:5000/photo/${post.photos[0].image}`} alt="detail"/>
+                                <img src={`${API_URL}/photo/${post.photos[0].image}`} alt="detail"/>
                             </div>
                             <div className="detail-sub-image">
                                 {post.photos.map(photo => {
@@ -81,7 +82,7 @@ const Detail = () => {
                                     return post.photos.indexOf(photo) !==0 ?
                                         <img
                                             key={photo.id} 
-                                            src={`http://localhost:5000/photo/${photo.image}`} 
+                                            src={`${API_URL}photo/${photo.image}`} 
                                             alt="detail"/>
                                         :""
                                 })}
