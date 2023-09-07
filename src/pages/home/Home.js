@@ -4,6 +4,7 @@ import { Fragment, useEffect, useState } from 'react';
 import { API } from '../../config/api';
 import Gallery from 'react-photo-gallery';
 import {useHistory} from 'react-router-dom';
+import { API_URL } from '../../config/keys';
 
 const Home = () => {
     const router = useHistory();
@@ -31,7 +32,7 @@ const Home = () => {
 
             for(let i = 0; i < response.data.data.posts.length; i++){
                 data[i] =  {
-                    src: `http://localhost:5000/photo/${response.data.data.posts[i].photos[0].image}`,
+                    src: `${API_URL}/photo/${response.data.data.posts[i].photos[0].image}`,
                     width: 1,
                     height: 1,
                     to: `/detail/${response.data.data.posts[i].id}`
