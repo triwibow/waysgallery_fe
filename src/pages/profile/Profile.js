@@ -63,7 +63,10 @@ const Profile = () => {
                                     <img src={`${API_URL}/photo/${user.posts[latestPostIndex].photos[0].image}`} alt="last post" />
                                 ): (
                                     <div className="empty-post">
-                                        <img src={empty} alt="empty" />
+                                        <img 
+                                            src={require('../../assets/icon/nopost.png')} 
+                                            alt="empty" 
+                                        />
                                     </div>
                                 )}
                             </div>
