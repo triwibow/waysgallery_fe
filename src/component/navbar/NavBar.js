@@ -3,6 +3,7 @@ import './navbar.css';
 import logo from '../../assets/icon/logo.svg';
 import { useState, useEffect} from 'react';
 import Dropdown from '../dropdown/Dropdown';
+import { API_URL } from '../../config/keys';
 
 const NavBar = () => {
     const [loading, setLoading] = useState(true);
@@ -50,7 +51,7 @@ const NavBar = () => {
 
                         <li className="navbar-menu-item">
                             <button className="navbar-menu-button" onClick={handleDropdown}>
-                                {loading ? "":<img src={`http://localhost:5000/avatar/${currentUser.avatar}`} alt="add_video_icon"/>}
+                                {loading ? "":<img src={`${API_URL}/avatar/${currentUser.avatar}`} alt="add_video_icon"/>}
                             </button>
                             {isDropdown ? <Dropdown/>: ""}
                         </li>

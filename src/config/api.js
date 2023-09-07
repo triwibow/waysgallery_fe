@@ -1,7 +1,8 @@
 import axios from 'axios';
+import { API_URL } from './keys';
 
 const API = axios.create({
-    baseURL: "https://waysgalleryapi.up.railway.app/api/v1",
+    baseURL: `${API_URL}'/api/v1`,
     headers: {
 			'Content-Type': 'application/json',
 			'Access-Control-Allow-Origin': '*',
