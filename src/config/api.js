@@ -2,7 +2,7 @@ import axios from 'axios';
 import { API_URL } from './keys';
 
 const API = axios.create({
-    baseURL: `${API_URL}'/api/v1`,
+    baseURL: `${API_URL}/api/v1`,
     headers: {
 			'Content-Type': 'application/json',
 			'Access-Control-Allow-Origin': '*',
